@@ -10,6 +10,36 @@ body {
   font-size: 15px;
 }
 
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1rem;
+  background: #373b69;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.search {
+  background: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  color: #fff;
+  font-family: inherit;
+  font-size: .8rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+
 .movie-container {
   display: flex;
   justify-content: center;

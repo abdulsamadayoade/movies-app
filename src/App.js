@@ -18,9 +18,15 @@ function App() {
   console.log(movies)
 
   return (
-    <div className="movie-container">
-      {movies.length > 0 && movies.map((movie) => <Movie key={movie.id} {...movie} />)}
-    </div>
+    <>
+      <header>
+        <a href="/">Movies App</a>
+        <input type="text" className="search" placeholder="Search" />
+      </header>
+      <div className="movie-container">
+        {movies.length > 0 && movies.map((movie) => <Movie key={movie.id} {...movie} />)}
+      </div>
+    </>
   );
 }
 
